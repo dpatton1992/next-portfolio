@@ -1,0 +1,132 @@
+.calendar {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 1rem;
+	padding: 1em;
+}
+
+.calendarContainer {
+	padding-left: 1em;
+}
+
+.dayNames {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 1rem;
+	padding: 1em 1em 0 1em;
+	font-weight: 600;
+	border-bottom: 1px solid black;
+}
+
+.available,
+.day {
+	border-radius: 0.25em;
+	border: 1px solid var(--transparent-grey);
+	width: 2em;
+	height: 2em;
+	text-align: center;
+	line-height: 1.8em;
+}
+
+.available:hover,
+.day:hover {
+	background-color: var(--transparent-grey);
+	cursor: pointer;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1px 1fr;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0.5rem lightgrey;
+	padding: 1em;
+	height: 30em;
+	--transparent-grey: rgba: 128, 128, 128, 0.5;
+}
+
+.divider {
+	height: 100%;
+	width: 0px;
+	border: 0.5px solid lightgrey;
+}
+
+.month {
+	font-size: 1.5em;
+	font-weight: 700;
+	text-align: center;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+}
+
+.navButton {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	background-color: rgba(72, 187, 120, 0.9);
+	border-radius: 50%;
+	color: #fff;
+	padding: 0.5em;
+}
+
+.navButton:hover {
+	background-color: rgba(72, 187, 120, 1);
+}
+
+.schedule {
+	padding: 1em;
+}
+
+.selectTime {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.timeContainer {
+	padding: 1em;
+	max-height: 26em;
+	overflow-y: scroll;
+}
+
+.timeGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+
+.timeCard {
+	padding: 1em;
+	border-radius: 0.5rem;
+	border: 1px solid lightgrey;
+	box-shadow: 0 0 0.5rem var(--transparent-grey);
+	cursor: pointer;
+}
+
+.timeCard:hover {
+	background-color: var(--transparent-grey);
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		display: grid;
+		grid-template-columns: unset;
+		grid-template-rows: 1fr 1px 1fr;
+	}
+}
+
+/* @media screen and (max-width: 1200px) {
+	.timeGrid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+} */
