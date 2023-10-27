@@ -7,7 +7,7 @@ export function Calendly() {
 		<div className="calendar" style={{ width: '100%' }}>
 			<InlineWidget
 				// styles={{ width: '100%' }}
-				url="https://calendly.com/d/z82-mwc-769/30min"
+				url="https://calendly.com/danielpattondev"
 			/>
 		</div>
 	);

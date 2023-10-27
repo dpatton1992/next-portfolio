@@ -20,6 +20,7 @@ import {
 	InputLeftElement,
 	Textarea,
 } from '@chakra-ui/react';
+// import { Button, Input } from 'dpatt-ui-react/src/components';
 import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from 'react-icons/md';
 import { BsLinkedin } from 'react-icons/bs';
 import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
@@ -48,7 +49,7 @@ export function Contact(props: {
 						<WrapItem>
 							<Box>
 								<Heading>Contact</Heading>
-								<Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+								<Text mt={{ sm: 3, md: 3, lg: 5 }}>
 									Fill up the form below to contact
 								</Text>
 								<Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
@@ -59,14 +60,7 @@ export function Contact(props: {
 												height="48px"
 												width="200px"
 												variant="ghost"
-												// color="gray.400"
-												// color={
-												// 	document.body.classList.contains('chakra-ui-light')
-												// 		? 'gray.200'
-												// 		: 'gray.500'
-												// }
-												// color={{ LightMode: '#DCE2FF', DarkMode: '#1C6FEB' }}
-												_hover={{ border: '2px solid #1C6FEB' }}
+												_hover={{ border: '2px solid #48BB78' }}
 												leftIcon={<MdPhone color="#48BB78" size="20px" />}
 											>
 												{phone}
@@ -78,9 +72,8 @@ export function Contact(props: {
 												height="48px"
 												width="200px"
 												variant="ghost"
-												color="#DCE2FF"
-												_hover={{ border: '2px solid #1C6FEB' }}
-												leftIcon={<MdEmail color="#1970F1" size="20px" />}
+												_hover={{ border: '2px solid #48BB78' }}
+												leftIcon={<MdEmail color="#48BB78" size="20px" />}
 											>
 												{email}
 											</Button>
@@ -95,9 +88,8 @@ export function Contact(props: {
 												height="48px"
 												width="200px"
 												variant="ghost"
-												color="#DCE2FF"
-												_hover={{ border: '2px solid #1C6FEB' }}
-												leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
+												_hover={{ border: '2px solid #48BB78' }}
+												leftIcon={<MdLocationOn color="#48BB78" size="20px" />}
 											>
 												{location}
 											</Button>
@@ -115,30 +107,40 @@ export function Contact(props: {
 										variant="ghost"
 										size="lg"
 										isRound={true}
-										_hover={{ bg: '#0D74FF' }}
+										_hover={{ bg: 'green.400' }}
 										icon={<BsLinkedin size="28px" />}
+										onClick={() => {
+											window.open(linkedin);
+										}}
 									/>
 									<IconButton
 										aria-label="github"
 										variant="ghost"
 										size="lg"
 										isRound={true}
-										_hover={{ bg: '#0D74FF' }}
+										_hover={{ bg: 'green.400' }}
 										icon={<BsGithub size="28px" />}
+										onClick={() => {
+											window.open(github);
+										}}
 									/>
 									<IconButton
 										aria-label="discord"
 										variant="ghost"
 										size="lg"
 										isRound={true}
-										_hover={{ bg: '#0D74FF' }}
+										_hover={{ bg: 'green.400' }}
 										icon={<BsDiscord size="28px" />}
+										onClick={() => {
+											window.open(discord);
+										}}
 									/>
 								</HStack>
 							</Box>
 						</WrapItem>
 						<WrapItem>
 							<Box bg="white" borderRadius="lg">
+								{/* <Box m={8}> */}
 								<Box m={8} color="#0B0E3F">
 									<VStack spacing={5}>
 										<FormControl id="name">
@@ -146,7 +148,7 @@ export function Contact(props: {
 											<InputGroup borderColor="#E0E1E7">
 												<InputLeftElement
 													pointerEvents="none"
-													children={<BsPerson color="gray.800" />}
+													children={<BsPerson />}
 												/>
 												<Input type="text" size="md" />
 											</InputGroup>
@@ -156,7 +158,7 @@ export function Contact(props: {
 											<InputGroup borderColor="#E0E1E7">
 												<InputLeftElement
 													pointerEvents="none"
-													children={<MdOutlineEmail color="gray.800" />}
+													children={<MdOutlineEmail />}
 												/>
 												<Input type="text" size="md" />
 											</InputGroup>
@@ -164,17 +166,17 @@ export function Contact(props: {
 										<FormControl id="name">
 											<FormLabel>Message</FormLabel>
 											<Textarea
+												color="gray.500"
 												borderColor="gray.300"
 												_hover={{
 													borderRadius: 'gray.300',
 												}}
-												placeholder="message"
 											/>
 										</FormControl>
 										<FormControl id="name" float="right">
 											<Button
 												variant="solid"
-												bg="#0D74FF"
+												bg="green.400"
 												color="white"
 												_hover={{}}
 											>

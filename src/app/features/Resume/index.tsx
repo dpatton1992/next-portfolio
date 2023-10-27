@@ -23,7 +23,7 @@ import {
 } from '@chakra-ui/react';
 import { CheckCircleIcon } from '@chakra-ui/icons';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
-import { Masonry } from '../Masonry';
+import { Masonry } from '../../components/Masonry';
 // import Slick from 'react-slick';
 
 const cardSettings = {

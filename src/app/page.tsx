@@ -1,14 +1,34 @@
 'use client';
 
 import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from '@next/font/google';
-import styles from '@/styles/page.module.css';
-import Navbar from '@/app/components/Navbar';
-import Hero from '@/app/components/Hero';
-import Bio from '@/app/components/Bio';
-import Resume from '@/app/components/Resume';
-import ScrollLink from './components/ScrollLink';
+import { Inter } from 'next/font/google';
+import styles from '@/styles/home.module.css';
+import Navbar from '@/app/features/Navbar';
+import {
+	Box,
+	Heading,
+	Container,
+	Text,
+	Button,
+	Stack,
+	useColorModeValue,
+	SimpleGrid,
+	StackDivider,
+	Flex,
+	Image,
+	Icon,
+} from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+import Resume from '@/app/features/Resume';
+import { projects, Project } from '@/app/projects/projectsList';
+import {
+	useTheme,
+	ThemeProvider,
+	invertBg,
+	lightTheme,
+} from './utils/useTheme';
+import * as Icons from 'simple-icons';
+import { Cloud, ICloud, SimpleIcon, renderSimpleIcon } from 'react-icon-cloud';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -31,10 +51,245 @@ export default function Home() {
 				<section id="bio" className={styles.section}>
 					<Bio />
 				</section>
-				<section id="resume" className={styles.section}>
+				{/* <section id="resume" className={styles.section}>
 					<Resume />
-				</section>
+				</section> */}
+				{/* <section id="skills" className={styles.section}>
+					<SkillsCloud />
+				</section> */}
 			</main>
 		</>
+	);
+}
+
+function Hero() {
+	const headingText = "Hello, I'm Daniel.";
+	const subText = 'I build websites and web apps.';
+
+	const sentence = {
+		hidden: { opacity: 1 },
+		visible: {
+			opacity: 1,
+			transition: {
+				delay: 0.5,
+				staggerChildren: 0.06,
+			},
+		},
+	};
+	const letter = {
+		hidden: { opacity: 0, y: 50 },
+		visible: { opacity: 1, y: 0 },
+	};
+	return (
+		<>
+			<Container maxW={'3xl'} minH={'h-full'}>
+				<Stack
+					as={Box}
+					textAlign={'center'}
+					spacing={{ base: 8, md: 14 }}
+					py={{ base: 20, md: 36 }}
+					mb={{ base: 20, md: 36 }}
+				>
+					<Heading
+						fontWeight={600}
+						fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+						lineHeight={'110%'}
+					>
+						<motion.span
+							className="homepage--header"
+							variants={sentence}
+							initial="hidden"
+							animate="visible"
+						>
+							{headingText.split('').map((char, index) => {
+								return (
+									<motion.span key={char + '-' + index} variants={letter}>
+										{char}
+									</motion.span>
+								);
+							})}
+							<br />
+							<Text as={'span'} color={'green.400'}>
+								{subText.split('').map((char, index) => {
+									return (
+										<motion.span key={char + '-' + index} variants={letter}>
+											{char}
+										</motion.span>
+									);
+								})}
+							</Text>
+						</motion.span>
+					</Heading>
+					{/* <Text color={'gray.500'}>
+          Developer, Frontend Engineer, Tier 3 Support Expert.
+          </Text> */}
+					<Stack
+						direction={'column'}
+						spacing={3}
+						align={'center'}
+						alignSelf={'center'}
+						position={'relative'}
+					>
+						<Button
+							colorScheme={'green'}
+							bg={'green.400'}
+							rounded={'full'}
+							px={6}
+							_hover={{
+								bg: 'green.500',
+							}}
+							onClick={() => {
+								window.location.href = './contact';
+							}}
+						>
+							Let's talk
+						</Button>
+						<Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+							Download my resume
+						</Button>
+					</Stack>
+				</Stack>
+			</Container>
+		</>
+	);
+}
+
+function Bio() {
+	return (
+		<Container maxW={'5xl'} py={12}>
+			<SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+				<Stack spacing={4}>
+					<Text
+						textTransform={'uppercase'}
+						color={'blue.400'}
+						fontWeight={600}
+						fontSize={'sm'}
+						bg={useColorModeValue('blue.50', 'blue.900')}
+						p={2}
+						alignSelf={'flex-start'}
+						rounded={'md'}
+					>
+						My Story
+					</Text>
+					<Heading>A fullstack developer with frontend expertise</Heading>
+					<Stack spacing={4} color={'gray.500'} fontSize={'md'}>
+						<Text>
+							I'm Daniel Patton, a highly skilled and motivated Web Developer
+							with a strong passion for creating exceptional user experiences.
+							My expertise lies in JavaScript/TypeScript, React, Node.js, and
+							other cutting-edge technologies, enabling me to deliver innovative
+							and efficient web solutions.
+						</Text>
+						<Text>
+							Throughout my experience as a implementation specialist, I've
+							honed the ability to tailor solutions to meet specific business
+							needs. Working closely with cross-functional teams, I excel in
+							creating developer resources, documentation, and automated testing
+							processes to uphold high-quality code standards.
+						</Text>
+						<Text>
+							Continuously staying up-to-date with industry trends and best
+							practices, I am driven to leverage my skills and creativity in
+							contributing to dynamic and growth-oriented organizations. My
+							focus remains on building visually appealing and user-centric web
+							interfaces that optimize website performance.
+						</Text>
+						<Text>
+							Join me on my journey as I strive to craft exceptional web
+							experiences that leave a lasting impact on users and drive
+							business success.
+						</Text>
+					</Stack>
+					<Stack
+						spacing={4}
+						divider={
+							<StackDivider
+								borderColor={useColorModeValue('gray.100', 'gray.700')}
+							/>
+						}
+					></Stack>
+				</Stack>
+				<Flex>
+					<Image
+						rounded={'md'}
+						alt={'feature image'}
+						src={
+							'https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+						}
+						objectFit={'cover'}
+						className={styles.bio_image}
+					/>
+				</Flex>
+			</SimpleGrid>
+		</Container>
+	);
+}
+
+function SkillsCloud() {
+	const icons = projects
+		.flatMap((project: Project) => project.technologies)
+		.filter((skill: string, index: number, self: string[]) => {
+			return self.indexOf(skill) === index;
+		})
+		.map((skill: string) => Icons[skill as keyof typeof Icons]);
+	// const { color } = useTheme();
+	const cloudProps: Omit<ICloud, 'children'> = {
+		containerProps: {
+			style: {
+				display: 'flex',
+				justifyContent: 'center',
+				alignItems: 'center',
+				width: '100%',
+				paddingTop: 40,
+			},
+		},
+		// https://www.goat1000.com/tagcanvas-options.php
+		options: {
+			clickToFront: 500,
+			depth: 1,
+			imageScale: 2,
+			initial: [0.1, -0.1],
+			outlineColour: '#0000',
+			reverse: true,
+			tooltip: 'native',
+			tooltipDelay: 0,
+			wheelZoom: false,
+		},
+	};
+	const renderCustomIcon = (icon: SimpleIcon, bg: string) => {
+		return renderSimpleIcon({
+			icon,
+			minContrastRatio: bg === lightTheme.color ? 1.2 : 2,
+			bgHex: bg,
+			size: 42,
+			fallbackHex: invertBg(bg),
+			aProps: {
+				href: undefined,
+				target: undefined,
+				rel: undefined,
+				onClick: (e: any) => e.preventDefault(),
+			},
+		});
+	};
+	// const cloudIcons = icons.map((i) => renderCustomIcon(i, '#000000'));
+	const cloudIcons = icons.map((i) =>
+		renderSimpleIcon({
+			icon: i,
+			minContrastRatio: '#000' === lightTheme.color ? 1.2 : 2,
+			bgHex: '#000',
+			size: 42,
+			fallbackHex: invertBg('#000'),
+			aProps: {
+				href: undefined,
+				target: undefined,
+				rel: undefined,
+				onClick: (e: any) => e.preventDefault(),
+			},
+		})
+	);
+	return (
+		// <ThemeProvider>
+		<Cloud {...cloudProps}>{cloudIcons}</Cloud>
+		// </ThemeProvider>
 	);
 }

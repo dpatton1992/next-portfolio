@@ -11,7 +11,7 @@ type ScrollLinkProps = AnchorProps & LinkProps & PropsWithChildren;
 const ScrollLink = ({ children, ...props }: ScrollLinkProps) => {
 	const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
 		e.preventDefault();
-		//remove everything before the hash
+		// remove everything before the hash
 		const targetId = e.currentTarget.href.replace(/.*\#/, '');
 		const elem = document.getElementById(targetId);
 		window.scrollTo({

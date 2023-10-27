@@ -28,7 +28,7 @@
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		"src/app/components/Navbar/Navbar.js",
+		"src/app/features/Navbar/Navbar.js",
 		".next/types/**/*.ts"
 	],
 	"exclude": ["node_modules"]

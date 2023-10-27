@@ -3,6 +3,7 @@
 import styles from '@/styles/schedule.module.css';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { BsClock, BsCaretLeft, BsCaretRight } from 'react-icons/bs';
+import { useQuery } from 'react-query';
 
 export function Schedule() {
 	const today = new Date();
@@ -109,7 +110,7 @@ function Calendar(props: {
 
 	// prepend empty divs to array to align days with correct day of week
 	while (firstDay > 0) {
-		daysArr.unshift('before');
+		daysArr.unshift(null);
 		firstDay--;
 	}
 
@@ -123,9 +124,7 @@ function Calendar(props: {
 			</div>
 			<div className={styles.calendar}>
 				{daysArr.map((day) => {
-					return day === 'before' ? (
-						<div key={(Math.random() + 1).toString(36).substring(7)} />
-					) : (
+					return day ? (
 						<div
 							key={day}
 							className={day > today.getDay() ? styles.available : styles.day}
@@ -133,6 +132,8 @@ function Calendar(props: {
 						>
 							{day}
 						</div>
+					) : (
+						<div key={(Math.random() + 1).toString(36).substring(7)} />
 					);
 				})}
 			</div>

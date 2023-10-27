@@ -99,6 +99,6 @@ export default async function handler(
     // const json = await reader.read();
     // console.log(json)
     console.log(body)
-    res.status(200).json(response)
-    // res.status(200).json({ items: 'penis' })
+    // res.status(200).json(response)
+    res.status(200).json({ items: 'penis' })
 }

@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from '@next/font/google';
+import { Inter } from 'next/font/google';
 import styles from '@/styles/page.module.css';
-import Navbar from '../components/Navbar';
-import {Contact} from '../components/Contact';
+import Navbar from '../features/Navbar';
+import { Contact } from '../features/Contact';
 import { Calendly } from '../components/Calendly';
-import { Schedule } from '../components/Schedule';
+import { Schedule } from '../features/Schedule';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -30,7 +30,7 @@ export default function ContactPage() {
 					github={'https://github.com/dpatton1992'}
 					discord={'dpatton#1992'}
 				/>
-				<Schedule />
+				{/* <Schedule /> */}
 				{/* <Calendly /> */}
 			</main>
 		</>
