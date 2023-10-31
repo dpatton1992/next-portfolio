@@ -20,7 +20,6 @@ import {
 	InputLeftElement,
 	Textarea,
 } from '@chakra-ui/react';
-// import { Button, Input } from 'dpatt-ui-react/src/components';
 import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from 'react-icons/md';
 import { BsLinkedin } from 'react-icons/bs';
 import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
