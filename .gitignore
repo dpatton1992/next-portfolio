@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 # REMOVING CONTENTS OF API FOLDER FOR NOW
-/api
+/src/pages/api
