@@ -214,8 +214,8 @@ function TechnicalImplementationSpecialist() {
 								</ListItem>
 								<ListItem key={3}>
 									<ListIcon as={icon} color={iconColor} />
-									Contributed new feature to Tilled's Simple Payment Example
-									during first Hackathon
+									Contributed new feature to Tilled&apos;s Simple Payment
+									Example during first Hackathon
 								</ListItem>
 								{/* You can also use custom icons from react-icons */}
 								<ListItem key={4}>

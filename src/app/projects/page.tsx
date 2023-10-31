@@ -1,12 +1,13 @@
 'use client';
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '@/styles/projects.module.css';
 import Navbar from '../features/Navbar';
 import { Box, Heading, Text } from '@chakra-ui/react';
 import * as d3 from 'd3';
 import cloud from 'd3-cloud';
 import { MutableRefObject, useEffect, useRef, useState } from 'react';
-import { container } from 'googleapis/build/src/apis/container';
+// import { container } from 'googleapis/build/src/apis/container';
 import { projects } from './projectsList';
 import { LoadingWheel } from '../components/LoadingWheel';
 
@@ -104,7 +105,8 @@ function ProjectSummary(props: {
 			</Box>
 			<div className={styles.image_container}>
 				<a href={link.href} target="_blank" rel="noreferrer">
-					<img src={image} alt={title} />
+					<Image src={image} alt={title} width={500} height={500} />
+					{/* <img src={image} alt={title} /> */}
 				</a>
 			</div>
 		</div>

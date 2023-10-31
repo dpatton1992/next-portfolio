@@ -30,8 +30,6 @@ export default function ContactPage() {
 					github={'https://github.com/dpatton1992'}
 					discord={'dpatton#1992'}
 				/>
-				{/* <Schedule /> */}
-				{/* <Calendly /> */}
 			</main>
 		</>
 	);

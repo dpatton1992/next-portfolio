@@ -105,6 +105,7 @@ function Hero() {
 								return (
 									<motion.span key={char + '-' + index} variants={letter}>
 										{char}
+										{/* {char !== "'" ? char : `&#39;`} */}
 									</motion.span>
 								);
 							})}
@@ -142,7 +143,7 @@ function Hero() {
 								window.location.href = './contact';
 							}}
 						>
-							Let's talk
+							Let&apos;s talk
 						</Button>
 						<Button variant={'link'} colorScheme={'blue'} size={'sm'}>
 							Download my resume
@@ -174,11 +175,11 @@ function Bio() {
 					<Heading>A fullstack developer with frontend expertise</Heading>
 					<Stack spacing={4} color={'gray.500'} fontSize={'md'}>
 						<Text>
-							I'm Daniel Patton, a highly skilled and motivated Web Developer
-							with a strong passion for creating exceptional user experiences.
-							My expertise lies in JavaScript/TypeScript, React, Node.js, and
-							other cutting-edge technologies, enabling me to deliver innovative
-							and efficient web solutions.
+							I&apos;m Daniel Patton, a highly skilled and motivated Web
+							Developer with a strong passion for creating exceptional user
+							experiences. My expertise lies in JavaScript/TypeScript, React,
+							Node.js, and other cutting-edge technologies, enabling me to
+							deliver innovative and efficient web solutions.
 						</Text>
 						<Text>
 							Throughout my experience as a implementation specialist, I've
