@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# REMOVING CONTENTS OF API FOLDER FOR NOW
+/api

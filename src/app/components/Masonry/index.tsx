@@ -32,7 +32,7 @@ export function Masonry(props: {
 		return () => {
 			window.removeEventListener('resize', computeSpans);
 		};
-	}, []);
+	}, [computeSpans]);
 
 	return (
 		<div
