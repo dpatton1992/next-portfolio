@@ -6,21 +6,39 @@
 
 :root,
 html[data-theme='light'] {
+	--text-color: #000;
 	--text-grey: #6c757d;
+	--link-blue: #3182ce;
+	--highlight-green: #48bb78;
 	--border-grey: #ced4da;
 	--transparent-grey: rgba(128, 128, 128, 0.5);
 	--box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	--form-bg: #fffffb;
 }
 
 html[data-theme='dark'] {
+	--text-color: #fff;
 	--text-grey: #ced4da;
 	--border-grey: #6c757d;
+	--highlight-green: #48bb78;
 	--transparent-grey: rgba(128, 128, 128, 0.5);
 	--box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+	--form-bg: rgba(0, 0, 0, 0.3);
 }
 
 :root,
 html {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
 		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+a {
+	color: var(--link-blue);
+	text-decoration: none;
+	font-weight: 600;
+	/* font-size: 0.9em; */
+}
+
+a:hover {
+	text-decoration: underline;
 }

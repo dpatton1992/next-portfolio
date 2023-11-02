@@ -1,0 +1,9 @@
+.resume_link {
+	color: #3182ce;
+	font-size: 0.9em;
+	font-weight: 600;
+}
+
+.resume_link:hover {
+	text-decoration: underline;
+}

@@ -7,13 +7,18 @@ const octokit = new Octokit({
 	userAgent: 'DP-Portfolio',
 });
 
-export default function GitHubVisulizer() {
+export default function GithubActivity() {
 	return (
 		<>
 			<ContributionGraph />
 			<ActivityOverview />
 		</>
 	);
+}
+
+function RecentCommmits() {
+	// const { users } = octokit.rest;
+	return <div></div>;
 }
 
 function ContributionGraph() {

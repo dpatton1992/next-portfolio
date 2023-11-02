@@ -1,0 +1,35 @@
+.project {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2em;
+	max-width: 1100px;
+	padding: 5em 0;
+}
+
+.project:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+.projectText {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	gap: 1em;
+}
+
+.projectText p {
+	color: var(--text-grey);
+}
+
+.inline_heading {
+	/* color: #48bb78; */
+	color: var(--text-color);
+	font-weight: 500;
+}
+
+.image_container img {
+	max-width: 400px;
+	box-shadow: var(--box-shadow);
+	border-radius: 0.5em;
+}

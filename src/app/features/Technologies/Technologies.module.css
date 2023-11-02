@@ -1,0 +1,26 @@
+.technologies_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 2em;
+	margin-bottom: 2em;
+	width: 100%;
+	min-height: 100svh;
+}
+
+.word_cloud_container {
+	height: 400px;
+	width: 100%;
+	max-width: 1000px;
+	width: 100%;
+}
+
+.word_cloud_container text {
+	transition: fill 0.5s ease;
+}
+
+.word_cloud_container text:hover {
+	fill: var(--chakra-colors-green-500) !important;
+}
