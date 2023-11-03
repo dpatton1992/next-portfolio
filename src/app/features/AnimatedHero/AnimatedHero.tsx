@@ -22,11 +22,6 @@ export function AnimatedHero() {
 		visible: { opacity: 1, y: 0 },
 	};
 
-	const getResume = () => {
-		window.location.href =
-			'https://www.dropbox.com/scl/fi/vass789n64goj5j96glcr/Resume_11-1-23.docx.pdf?rlkey=42b2sfooa0480q0pxfotb1w1v&dl=0';
-	};
-
 	return (
 		<>
 			<Container maxW={'3xl'} minH={'h-full'}>
@@ -87,7 +82,7 @@ export function AnimatedHero() {
 								bg: 'green.500',
 							}}
 							onClick={() => {
-								window.location.href = './contact';
+								window.location.href = '#contact';
 							}}
 						>
 							Let&apos;s talk
