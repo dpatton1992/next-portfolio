@@ -13,7 +13,7 @@ html[data-theme='light'] {
 	--border-grey: #ced4da;
 	--transparent-grey: rgba(128, 128, 128, 0.5);
 	--box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-	--form-bg: #fffffb;
+	--form-bg: #fff;
 }
 
 html[data-theme='dark'] {

@@ -1,4 +1,5 @@
 import styles from './Bio.module.css';
+// import BioImg from '/images/me.png';
 import {
 	Container,
 	SimpleGrid,
@@ -8,8 +9,9 @@ import {
 	StackDivider,
 	Flex,
 	Text,
-	Image,
+	Image as ChakraImage,
 } from '@chakra-ui/react';
+import Image from 'next/image';
 
 export function Bio() {
 	return (
@@ -67,13 +69,21 @@ export function Bio() {
 					></Stack>
 				</Stack>
 				<Flex>
-					<Image
+					{/* <ChakraImage
 						rounded={'md'}
 						alt={'feature image'}
 						src={
 							'https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
 						}
 						objectFit={'cover'}
+						className={styles.bio_image}
+					/> */}
+					<Image
+						src={'/images/me.png'}
+						alt="Picture of the author"
+						width={500}
+						height={500}
+						style={{ objectFit: 'cover', borderRadius: '0.5em' }}
 						className={styles.bio_image}
 					/>
 				</Flex>
