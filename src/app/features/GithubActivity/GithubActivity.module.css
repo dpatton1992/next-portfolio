@@ -1,0 +1,24 @@
+.commitContainer {
+	height: 400px;
+	overflow-y: scroll;
+}
+
+.commitLink {
+	display: flex;
+	justify-content: space-between;
+	gap: 1em;
+	width: 100%;
+	border: 1px solid #ccc; /* Optional: Add a border for visualization */
+	/* width: 700px;
+	max-width: 100%; */
+}
+
+.commitMessage {
+	/* width: 200px; Set the width of your container */
+	width: 400px;
+	max-width: 50dvh;
+	white-space: nowrap; /* Prevent text from wrapping */
+	overflow: hidden; /* Hide the overflow */
+	text-overflow: ellipsis; /* Add ellipsis for overflow text */
+	box-sizing: border-box;
+}

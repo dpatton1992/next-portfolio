@@ -23,6 +23,9 @@ dependencies:
   '@google-cloud/local-auth':
     specifier: ^2.1.1
     version: 2.1.1
+  '@octokit/core':
+    specifier: ^5.0.1
+    version: 5.0.1
   '@types/node':
     specifier: 18.13.0
     version: 18.13.0

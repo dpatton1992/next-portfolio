@@ -273,11 +273,11 @@ const NAV_ITEMS: Array<NavItem> = [
 		label: 'My Projects',
 		href: '/my-work',
 		children: [
-			{
-				label: 'Github Activity',
-				subLabel: "See what i've been working on recently",
-				href: '/my-work#github-activity',
-			},
+			// {
+			// 	label: 'Github Activity',
+			// 	subLabel: "See what i've been working on recently",
+			// 	href: '/my-work#github-activity',
+			// },
 			{
 				label: 'Projects',
 				subLabel: 'A list of my favorite projects',
