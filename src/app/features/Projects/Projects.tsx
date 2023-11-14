@@ -36,7 +36,7 @@ function ProjectSummary(props: {
 	const { title, description, technologies, link, image } = props;
 	return (
 		<div
-			id={'#' + title[0].toLowerCase() + title.slice(1)}
+			id={'#' + title.toLowerCase().replaceAll(/\W/g, '-')}
 			className={styles.project}
 		>
 			<Box className={styles.projectText}>

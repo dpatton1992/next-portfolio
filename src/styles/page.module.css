@@ -38,7 +38,4 @@
 	.heading h1 {
 		font-size: 1.5em;
 	}
-	.contact_container {
-		flex-direction: column;
-	}
 }

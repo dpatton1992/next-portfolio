@@ -84,3 +84,9 @@
 .contact_form button:hover {
 	background-color: #38a169;
 }
+
+@media (max-width: 700px) {
+	.contact_container {
+		flex-direction: column;
+	}
+}

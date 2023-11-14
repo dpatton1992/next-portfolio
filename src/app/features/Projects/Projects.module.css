@@ -33,3 +33,14 @@
 	box-shadow: var(--box-shadow);
 	border-radius: 0.5em;
 }
+
+@media (max-width: 700px) {
+	.project,
+	.project:nth-child(odd) {
+		flex-direction: column;
+	}
+
+	.image_container img {
+		max-width: 100%;
+	}
+}
