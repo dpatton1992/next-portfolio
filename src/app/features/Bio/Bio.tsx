@@ -1,5 +1,4 @@
 import styles from './Bio.module.css';
-// import BioImg from '/images/me.png';
 import {
 	Container,
 	SimpleGrid,
@@ -34,7 +33,7 @@ export function Bio() {
 					<Stack spacing={4} color={'gray.500'} fontSize={'md'}>
 						<Text>
 							I&apos;m Daniel Patton, a highly skilled and motivated Web
-							Developer with a strong passion for creating exceptional user
+							Developer with a passion for creating exceptional user
 							experiences. My expertise lies in JavaScript/TypeScript, React,
 							Node.js, and other cutting-edge technologies, enabling me to
 							deliver innovative and efficient web solutions.

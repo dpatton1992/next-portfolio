@@ -79,7 +79,7 @@ export function Navbar() {
 					direction={'row'}
 					spacing={6}
 				>
-					<Button onClick={toggleColorMode}>
+					<Button name="Color Mode Toggle" onClick={toggleColorMode}>
 						{colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
 					</Button>
 				</Stack>
@@ -270,7 +270,7 @@ const NAV_ITEMS: Array<NavItem> = [
 		],
 	},
 	{
-		label: 'My Projects',
+		label: 'My Work',
 		href: '/my-work',
 		children: [
 			// {
