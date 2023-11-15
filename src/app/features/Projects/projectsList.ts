@@ -76,7 +76,7 @@ export const projects = [
         description:
             'This website! Built with Next.js, Chakra UI, and Typescript. This site is used in production by Daniel Patton😁.',
         technologies: ['Next.js', 'Chakra UI', 'Typescript'],
-        link: { href: '/', text: 'View on GitHub' },
+        link: { href: 'https://github.com/dpatton1992/next-portfolio', text: 'View on GitHub' },
         image: '/images/portfolio.png',
     },
 ];
