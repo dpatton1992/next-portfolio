@@ -79,7 +79,7 @@ export function Navbar() {
 					direction={'row'}
 					spacing={6}
 				>
-					<Button name="Color Mode Toggle" onClick={toggleColorMode}>
+					<Button aria-label="color mode toggle" onClick={toggleColorMode}>
 						{colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
 					</Button>
 				</Stack>
