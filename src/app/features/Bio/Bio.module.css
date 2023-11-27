@@ -1,3 +1,5 @@
 .bio_image {
 	box-shadow: var(--box-shadow);
+	object-fit: cover;
+	border-radius: 0.5em;
 }

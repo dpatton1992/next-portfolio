@@ -81,8 +81,7 @@ export function Bio() {
 						src={'/images/me.png'}
 						alt="Picture of the author"
 						width={500}
-						height={500}
-						style={{ objectFit: 'cover', borderRadius: '0.5em' }}
+						height={0}
 						className={styles.bio_image}
 					/>
 				</Flex>

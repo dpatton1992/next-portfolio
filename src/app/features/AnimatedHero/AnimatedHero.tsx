@@ -88,7 +88,7 @@ export function AnimatedHero() {
 							Let&apos;s talk
 						</Button>
 						<Link
-							href="https://www.dropbox.com/scl/fi/vass789n64goj5j96glcr/Resume_11-1-23.docx.pdf?rlkey=42b2sfooa0480q0pxfotb1w1v&dl=0"
+							href="https://www.dropbox.com/scl/fi/odh63p5hpfvxq1k117t0t/Resume_11-27-23.pdf?rlkey=vnu2brblsoueewgafrlms36kf&dl=0"
 							target="_blank"
 							className={styles.resume_link}
 						>
