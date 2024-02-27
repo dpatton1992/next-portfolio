@@ -61,9 +61,9 @@ export const projects = [
         image: '/images/tilled-examples.png',
     },
     {
-        title: 'FancyUI',
+        title: '🚧FancyUI🚧',
         description:
-            'A Fancy React component library built with React, Typescript, Emotion, Jest, and Storybook and hosted on NPM. This library shows off my skills in building a component library, including accessibility, documentation, and testing.',
+            'A Fancy React component library built with React, Typescript, Emotion, Jest, and Storybook and hosted on NPM. This library shows off my skills in building a component library, including accessibility, documentation, and testing. This project is still undergoing active development.',
         technologies: ['React', 'Typescript', 'Emotion', 'Jest', 'Storybook'],
         link: {
             href: 'https://www.npmjs.com/package/fancy-ui-react',
