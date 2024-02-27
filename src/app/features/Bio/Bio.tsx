@@ -36,32 +36,30 @@ export function Bio() {
 							passion for creating exceptional user experiences and driving
 							positive business outcomes. My expertise lies in Javascript
 							ecosystem, web development, and RESTful APIs, enabling me to
-							deliver innovative and efficient web solutions. I excel in
+							deliver innovative and effective web solutions. I excel in
 							creating developer resources, documentation, and automated testing
 							processes to uphold high-quality code standards.
 						</Text>
 						<Text>
-							Currently serving as a Senior Solution Engineer at Tilled in
-							Broomfield, CO since 2023, I've been integral in planning
-							integrations, creating workflows, and offering technical expertise
-							to support the sales team during customer-facing calls. Notable
-							achievements include automating dispute responses through code,
-							developing the tilled-react UI library, and leading the refinement
-							of the partner console.
+							Currently serving as a Senior Solution Engineer at Tilled since
+							2023, I've been integral in facilitating integrations and offering
+							technical expertise to support the sales team during
+							customer-facing calls. Notable achievements include writing a
+							proof of concept to automate dispute responses, developing the
+							tilled-react UI library, and leading the UI/UX refactor of the
+							partner console.
 						</Text>
 						<Text>
-							As a Senior Technical Onboarding Manager, I introduced whitelabel
-							functionality to our documentation site, managed the release of
-							the tilled-node SDK, and created an iOS checkout example
-							application. In my prior roles as a Technical Implementation
-							Specialist and Partner Technical Solutions Specialist, I led
-							escalations, developed a public-facing monorepo, and played a key
-							role in setting up a new documentation site. Before Tilled, my
-							contributions as a Developer and Project Manager at The Palladian
-							Group involved coordinating teams, leading development of an OTT
-							framework, and managing multiple web projects. In my freelance
-							career, I prioritized web development, emphasizing accessibility,
-							mobile responsiveness, SEO and performance optimization.
+							In my previous roles at Tilled, I demonstrated a passion of
+							developer experience, creating a new docs site and code examples
+							in 3 different languages/frameworks. I also spearheaded the
+							release of the tilled-node SDK and worked closely with developers
+							undergoing integration. Before Tilled, my contributions as a
+							Developer and Project Manager at The Palladian Group involved
+							coordinating teams, leading development of an OTT framework, and
+							managing multiple web projects. In my freelance career, I
+							prioritized web development, emphasizing accessibility, mobile
+							responsiveness, SEO, and performance optimization.
 						</Text>
 					</Stack>
 					<Stack
