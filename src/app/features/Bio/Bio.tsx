@@ -34,15 +34,14 @@ export function Bio() {
 						<Text>
 							I&apos;m Daniel Patton, a results-oriented technologist with a
 							passion for creating exceptional user experiences and driving
-							positive business outcomes. My expertise lies in Javascript
-							ecosystem, web development, and RESTful APIs, enabling me to
-							deliver innovative and effective web solutions. I excel in
+							positive business outcomes. My expertise lies in troubleshooting
+							technical problems, web development, and RESTful APIs. I excel at
 							creating developer resources, documentation, and automated testing
 							processes to uphold high-quality code standards.
 						</Text>
 						<Text>
 							Currently serving as a Senior Solution Engineer at Tilled since
-							2023, I've been integral in facilitating integrations and offering
+							2023, I've been played a key role in facilitating integrations and offering
 							technical expertise to support the sales team during
 							customer-facing calls. Notable achievements include writing a
 							proof of concept to automate dispute responses, developing the
