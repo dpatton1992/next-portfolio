@@ -32,30 +32,36 @@ export function Bio() {
 					<Heading>A fullstack developer with frontend expertise</Heading>
 					<Stack spacing={4} color={'gray.500'} fontSize={'md'}>
 						<Text>
-							I&apos;m Daniel Patton, a highly skilled and motivated Web
-							Developer with a passion for creating exceptional user
-							experiences. My expertise lies in JavaScript/TypeScript, React,
-							Node.js, and other cutting-edge technologies, enabling me to
-							deliver innovative and efficient web solutions.
-						</Text>
-						<Text>
-							Throughout my experience as a implementation specialist, I've
-							honed the ability to tailor solutions to meet specific business
-							needs. Working closely with cross-functional teams, I excel in
+							I&apos;m Daniel Patton, a highly driven technologist with a
+							passion for creating exceptional user experiences and driving
+							positive business outcomes. My expertise lies in Javascript
+							ecosystem, web development, and RESTful APIs, enabling me to
+							deliver innovative and efficient web solutions. I excel in
 							creating developer resources, documentation, and automated testing
 							processes to uphold high-quality code standards.
 						</Text>
 						<Text>
-							Continuously staying up-to-date with industry trends and best
-							practices, I am driven to leverage my skills and creativity in
-							contributing to dynamic and growth-oriented organizations. My
-							focus remains on building visually appealing and user-centric web
-							interfaces that optimize website performance.
+							Currently serving as a Senior Solution Engineer at Tilled in
+							Broomfield, CO since 2023, I've been integral in planning
+							integrations, creating workflows, and offering technical expertise
+							to support the sales team during customer-facing calls. Notable
+							achievements include automating dispute responses through code,
+							developing the tilled-react UI library, and leading the refinement
+							of the partner console.
 						</Text>
 						<Text>
-							Join me on my journey as I strive to craft exceptional web
-							experiences that leave a lasting impact on users and drive
-							business success.
+							As a Senior Technical Onboarding Manager, I introduced whitelabel
+							functionality to our documentation site, managed the release of
+							the tilled-node SDK, and created an iOS checkout example
+							application. In my prior roles as a Technical Implementation
+							Specialist and Partner Technical Solutions Specialist, I led
+							escalations, developed a public-facing monorepo, and played a key
+							role in setting up a new documentation site. Before Tilled, my
+							contributions as a Developer and Project Manager at The Palladian
+							Group involved coordinating teams, leading development of an OTT
+							framework, and managing multiple web projects. In my freelance
+							career, I prioritized web development, emphasizing accessibility,
+							mobile responsiveness, SEO and performance optimization.
 						</Text>
 					</Stack>
 					<Stack
