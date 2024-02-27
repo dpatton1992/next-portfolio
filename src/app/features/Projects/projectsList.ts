@@ -11,17 +11,6 @@ export type Project = {
 
 export const projects = [
     {
-        title: 'karuna.health',
-        description:
-            'A marketing website for Karuna Health, built with Astro and Tailwind. This site is lightning fast, with a 100% Lighthouse score and is used in production by Karuna Health.',
-        technologies: ['Astro', 'Typescript', 'Tailwind', 'Vercel'],
-        link: {
-            href: 'https://karuna.health',
-            text: 'View at karuna.health',
-        },
-        image: '/images/karuna-health.png',
-    },
-    {
         title: 'Tilled Node',
         description:
             "A Node.js library for interacting with Tilled's API. Built with Typescript and OpenAPIGenerator to automatically generate upon changes to the Tilled API.",
@@ -39,16 +28,6 @@ export const projects = [
         image: '/images/tilled-node.png',
     },
     {
-        title: 'markdown-to-preact-parser',
-        description: 'A markdown parser for Preact, built with Typescript. This library is used in production by Tilled.',
-        technologies: ['Preact', 'Typescript', 'Markdown'],
-        link: {
-            href: 'https://www.npmjs.com/package/@dpatt/markdown-to-preact-parser',
-            text: 'View on NPM',
-        },
-        image: '/images/markdown-to-preact.png',
-    },
-    {
         title: 'docs.tilled.com',
         description:
             "Tilled's technical documentation, built with Hugo, a custom fork of StaticCMS, and support for whitelabel functionality. This site is used in production by Tilled.",
@@ -60,17 +39,6 @@ export const projects = [
         image: '/images/docs-tilled.png',
     },
     {
-        title: 'delimiterized-regex-builder',
-        description:
-            'A Typescript library for generating a regex from an array of strings to match all of the strings in order, separated by a delimiter.',
-        technologies: ['Typescript', 'Regex'],
-        link: {
-            href: 'https://www.npmjs.com/package/@dpatt/delimiterized-regex-builder',
-            text: 'View on NPM',
-        },
-        image: '/images/delimiterized-regex.png',
-    },
-    {
         title: 'Tilled Example Monorepo',
         description:
             "A monorepo containing examples to integrate with Tilled's tokenization library and API to process payments. The examples are built with React, Node.js, Swift, Typescript, and vanilla Javascript.",
@@ -80,6 +48,38 @@ export const projects = [
             text: 'View on GitHub',
         },
         image: '/images/tilled-examples.png',
+    },
+    {
+        title: 'karuna.health',
+        description:
+            'A marketing website for Karuna Health, built with Astro and Tailwind. This site is lightning fast, with a 100% Lighthouse score and is used in production by Karuna Health.',
+        technologies: ['Astro', 'Typescript', 'Tailwind', 'Vercel'],
+        link: {
+            href: 'https://karuna.health',
+            text: 'View at karuna.health',
+        },
+        image: '/images/karuna-health.png',
+    },
+    {
+        title: 'markdown-to-preact-parser',
+        description: 'A markdown parser for Preact, built with Typescript. This library is used in production by Tilled.',
+        technologies: ['Preact', 'Typescript', 'Markdown'],
+        link: {
+            href: 'https://www.npmjs.com/package/@dpatt/markdown-to-preact-parser',
+            text: 'View on NPM',
+        },
+        image: '/images/markdown-to-preact.png',
+    },
+    {
+        title: 'delimiterized-regex-builder',
+        description:
+            'A Typescript library for generating a regex from an array of strings to match all of the strings in order, separated by a delimiter.',
+        technologies: ['Typescript', 'Regex'],
+        link: {
+            href: 'https://www.npmjs.com/package/@dpatt/delimiterized-regex-builder',
+            text: 'View on NPM',
+        },
+        image: '/images/delimiterized-regex.png',
     },
     {
         title: '🚧FancyUI🚧',
