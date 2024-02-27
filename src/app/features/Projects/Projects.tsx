@@ -1,6 +1,6 @@
-import { Heading as MyHeading } from '@/app/components/Heading';
 import { projects } from './projectsList';
 import styles from './Projects.module.css';
+import headingStyles from '@/app/components/Heading/Heading.module.css';
 import { Box, Heading, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -8,10 +8,10 @@ import Image from 'next/image';
 export function Projects() {
 	return (
 		<>
-			<MyHeading
-				heading="Projects"
-				subheading="Check out some of my personal and professional projects, demonstrating skills in React, Node, Swift, serverless platforms, and automating CI/CD pipelines."
-			/>
+			<div className={headingStyles.heading}>
+				<h2>Projects</h2>
+				<p>Check out some of my personal and professional projects, demonstrating skills in React, Node, Swift, serverless platforms, and automating CI/CD pipelines. You can also view my work on <Link href={'https://www.npmjs.com/~dpatt'}>NPM</Link> and <Link href={'https://github.com/dpatton1992'}>Github</Link>.</p>
+			</div>
 			{projects.map((project) => (
 				<ProjectSummary
 					key={project.title}

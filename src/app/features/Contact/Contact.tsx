@@ -1,5 +1,6 @@
 import { Button, IconButton } from '@chakra-ui/react';
-import { BsGithub, BsLinkedin, BsDiscord } from 'react-icons/bs';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { SiNpm } from 'react-icons/si';
 import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md';
 import styles from './Contact.module.css';
 import { Heading } from '@/app/components/Heading';
@@ -10,9 +11,9 @@ export function Contact(props: {
 	location: string;
 	linkedin: string;
 	github: string;
-	discord: string;
+	npm: string;
 }) {
-	const { phone, email, location, linkedin, github, discord } = props;
+	const { phone, email, location, linkedin, github, npm } = props;
 
 	return (
 		<>
@@ -84,14 +85,14 @@ export function Contact(props: {
 							}}
 						/>
 						<IconButton
-							aria-label="discord"
+							aria-label="npm"
 							variant="ghost"
 							size="lg"
 							isRound={true}
 							_hover={{ bg: 'green.400' }}
-							icon={<BsDiscord size="28px" />}
+							icon={<SiNpm size="28px" />}
 							onClick={() => {
-								window.open(discord);
+								window.open(npm);
 							}}
 						/>
 					</div>

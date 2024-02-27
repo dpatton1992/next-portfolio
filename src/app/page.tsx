@@ -28,7 +28,7 @@ export default function Home() {
 						location={'Greenville, SC'}
 						linkedin={'https://www.linkedin.com/in/daniel-patton-developer'}
 						github={'https://github.com/dpatton1992'}
-						discord={'dpatton#1992'}
+						npm={'https://www.npmjs.com/~dpatt'}
 					/>
 				</section>
 			</main>
