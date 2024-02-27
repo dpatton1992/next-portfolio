@@ -29,10 +29,10 @@ export function Bio() {
 					>
 						My Story
 					</Text>
-					<Heading>A fullstack developer with frontend expertise</Heading>
+					<Heading>Experienced and versatile technical problem-solver</Heading>
 					<Stack spacing={4} color={'gray.500'} fontSize={'md'}>
 						<Text>
-							I&apos;m Daniel Patton, a highly driven technologist with a
+							I&apos;m Daniel Patton, a results-oriented technologist with a
 							passion for creating exceptional user experiences and driving
 							positive business outcomes. My expertise lies in Javascript
 							ecosystem, web development, and RESTful APIs, enabling me to
