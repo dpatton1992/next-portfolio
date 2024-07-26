@@ -30,8 +30,8 @@ export const projects = [
     {
         title: 'docs.tilled.com',
         description:
-            "Tilled's technical documentation, built with Hugo, a custom fork of StaticCMS, and support for whitelabel functionality. This site is used in production by Tilled.",
-        technologies: ['Hugo', 'Javascript', 'Netlify', 'Github Actions', 'Preact'],
+            "Tilled's technical documentation, built with Next.js, a custom fork of StaticCMS, and support for whitelabel functionality that drives our resellers product offering. This site is used in production by Tilled.",
+        technologies: ['Next.js', 'Javascript', 'Amplify', 'Github Actions', 'Preact'],
         link: {
             href: 'https://docs.tilled.com',
             text: 'View at docs.tilled.com',
