@@ -3,7 +3,6 @@
 import styles from './schedule.module.css';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { BsClock, BsCaretLeft, BsCaretRight } from 'react-icons/bs';
-import { useQuery } from 'react-query';
 
 export function Schedule() {
 	const today = new Date();

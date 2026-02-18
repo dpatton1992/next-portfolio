@@ -4,7 +4,7 @@ import React, { useRef, useState, useEffect } from 'react';
 export function Masonry(props: {
 	rowHeight?: number;
 	colWidth?: string;
-	children: Array<JSX.Element>;
+	children: Array<React.ReactElement>;
 }) {
 	const ref = useRef(null);
 	const [state, setState] = useState({ spans: [] as Array<number> });

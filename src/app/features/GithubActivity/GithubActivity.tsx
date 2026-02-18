@@ -8,16 +8,17 @@ import {
 	getContributionsForUser,
 } from '@/app/utils/oktokit-wrappers';
 import { LoadingWheel } from '@/app/components/LoadingWheel';
-import { useQuery } from 'react-query';
+import { useQuery } from '@tanstack/react-query';
 import * as d3 from 'd3';
 import { useRef, useEffect } from 'react';
 
 export function GithubActivity() {
 	const username = 'dpatton1992';
 
-	const { isLoading, isError, data, error } = useQuery('contributions', () =>
-		getContributionsForUser(username)
-	);
+	const { isLoading, isError, data, error } = useQuery({
+		queryKey: ['contributions'],
+		queryFn: () => getContributionsForUser(username)
+	});
 
 	return (
 		<>
@@ -60,9 +61,10 @@ function RecentCommits(props: { username: string }) {
 	// // 		});
 	// // }, []);
 
-	const { isLoading, isError, data, error } = useQuery('commits', () =>
-		getRecentCommitsForUser(username)
-	);
+	const { isLoading, isError, data, error } = useQuery({
+		queryKey: ['commits'],
+		queryFn: () => getRecentCommitsForUser(username)
+	});
 
 	return (
 		<div>
