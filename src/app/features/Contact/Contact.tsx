@@ -12,8 +12,9 @@ export function Contact(props: {
 	linkedin: string;
 	github: string;
 	npm: string;
+	substack: string;
 }) {
-	const { phone, email, location, linkedin, github, npm } = props;
+	const { phone, email, location, linkedin, github, npm, substack } = props;
 
 	return (
 		<>

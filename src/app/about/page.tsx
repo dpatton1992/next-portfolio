@@ -3,21 +3,17 @@
 import Head from '@/app/head';
 import styles from '@/styles/page.module.css';
 import { Navbar } from '@/app/features/Navbar';
-import { AnimatedHero } from '@/app/features/AnimatedHero';
 import { Bio } from '@/app/features/Bio';
 import { Contact } from '@/app/features/Contact';
 
-export default function Home() {
+export default function AboutPage() {
 	return (
 		<>
-			<Head subTitle="Home" />
+			<Head subTitle="About" />
 			<nav>
 				<Navbar />
 			</nav>
 			<main className={styles.main}>
-				<section id="hero" className={styles.section}>
-					<AnimatedHero />
-				</section>
 				<section id="bio" className={styles.section}>
 					<Bio />
 				</section>

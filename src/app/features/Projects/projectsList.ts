@@ -13,7 +13,7 @@ export const projects = [
     {
         title: 'Tilled Node',
         description:
-            "A Node.js library for interacting with Tilled's API. Built with Typescript and OpenAPIGenerator to automatically generate upon changes to the Tilled API.",
+            "A Node.js library for interacting with Tilled's API. Built with Typescript and OpenAPIGenerator to automatically generate upon changes to the Tilled API. Processes 250k+ weekly SDK requests in production.",
         technologies: [
             'Node.js',
             'Typescript',
@@ -28,10 +28,21 @@ export const projects = [
         image: '/images/tilled-node.png',
     },
     {
+        title: 'Paysafe Processor Service',
+        description:
+            "Led implementation of Tilled's first processor service within a distributed architecture. Designed domain event contracts, state transitions for onboarding/payments, and multi-datastore persistence strategy using Postgres, Redis, and DynamoDB. Established modeling conventions adopted across subsequent integrations.",
+        technologies: ['Node.js', 'NestJS', 'Typescript', 'Postgres', 'Redis', 'DynamoDB', 'RabbitMQ', 'AWS'],
+        link: {
+            href: 'https://tilled.com',
+            text: 'Learn about Tilled',
+        },
+        image: '/images/tilled-node.png',
+    },
+    {
         title: 'docs.tilled.com',
         description:
             "Tilled's technical documentation, built with Next.js, a custom fork of StaticCMS, and support for whitelabel functionality that drives our resellers product offering. This site is used in production by Tilled.",
-        technologies: ['Next.js', 'Javascript', 'Amplify', 'Github Actions', 'Preact'],
+        technologies: ['Next.js', 'Typescript', 'Amplify', 'Github Actions', 'Preact'],
         link: {
             href: 'https://docs.tilled.com',
             text: 'View at docs.tilled.com',
@@ -80,17 +91,6 @@ export const projects = [
             text: 'View on NPM',
         },
         image: '/images/delimiterized-regex.png',
-    },
-    {
-        title: '🚧FancyUI🚧',
-        description:
-            'A Fancy React component library built with React, Typescript, Emotion, Jest, and Storybook and hosted on NPM. This library shows off my skills in building a component library, including accessibility, documentation, and testing. This project is still undergoing active development.',
-        technologies: ['React', 'Typescript', 'Emotion', 'Jest', 'Storybook'],
-        link: {
-            href: 'https://www.npmjs.com/package/fancy-ui-react',
-            text: 'View on NPM',
-        },
-        image: '/images/fancy-ui.png',
     },
     {
         title: 'Portfolio',

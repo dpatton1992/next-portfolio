@@ -27,38 +27,21 @@ export function Bio() {
 						alignSelf={'flex-start'}
 						rounded={'md'}
 					>
-						My Story
+						About Me
 					</Text>
-					<Heading>Experienced and versatile technical problem-solver</Heading>
+					<Heading>Backend Software Engineer building distributed payment systems</Heading>
 					<Stack spacing={4} color={'gray.500'} fontSize={'md'}>
 						<Text>
-							I&apos;m Daniel Patton, a results-oriented technologist with a
-							passion for creating exceptional user experiences and driving
-							positive business outcomes. My expertise lies in troubleshooting
-							technical problems, web development, and RESTful APIs. I excel at
-							creating developer resources, documentation, and automated testing
-							processes to uphold high-quality code standards.
+							I&apos;m Daniel Patton, a Backend Software Engineer specializing in distributed payment systems and service boundaries. Based in Greenville, SC, I design and implement scalable backend architectures that power fintech infrastructure.
 						</Text>
 						<Text>
-							Currently serving as a Senior Solution Engineer at Tilled since
-							2023, I've been played a key role in facilitating integrations and offering
-							technical expertise to support the sales team during
-							customer-facing calls. Notable achievements include writing a
-							proof of concept to automate dispute responses, developing the
-							tilled-react UI library, and leading the UI/UX refactor of the
-							partner console.
+							Currently at Tilled, I led the implementation of our first processor service (Paysafe) within our distributed architecture—designing domain event contracts, onboarding and payment state transitions, and multi-datastore persistence across Postgres, Redis, and DynamoDB. The modeling and validation conventions I established have been adopted across subsequent processor integrations.
 						</Text>
 						<Text>
-							In my previous roles at Tilled, I demonstrated a passion of
-							developer experience, creating a new docs site and code examples
-							in 3 different languages/frameworks. I also spearheaded the
-							release of the tilled-node SDK and worked closely with developers
-							undergoing integration. Before Tilled, my contributions as a
-							Developer and Project Manager at The Palladian Group involved
-							coordinating teams, leading development of an OTT framework, and
-							managing multiple web projects. In my freelance career, I
-							prioritized web development, emphasizing accessibility, mobile
-							responsiveness, SEO, and performance optimization.
+							I maintain the tilled-node SDK, which processes over 250,000 weekly requests, and serve as the subject matter expert for onboarding, whitelabel, and Auth0-based authentication. Throughout my time at Tilled, I&apos;ve been promoted from Solutions Engineer to Senior Integrations Engineer to Software Engineer, building internal automation that improves partner onboarding visibility and mentoring engineers on backend modeling and event-driven patterns.
+						</Text>
+						<Text>
+							Before Tilled, I contributed to backend services for a proprietary OTT platform at The Palladian Group and delivered 20+ production web applications. I hold a B.A. in Economics from Wofford College and am an AWS Certified Cloud Practitioner.
 						</Text>
 					</Stack>
 					<Stack

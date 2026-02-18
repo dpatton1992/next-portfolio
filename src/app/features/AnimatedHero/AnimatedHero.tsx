@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export function AnimatedHero() {
 	const headingText = "Hello, I'm Daniel.";
-	const subText = 'I build websites and web apps.';
+	const subText = 'Backend Software Engineer';
 
 	const sentence = {
 		hidden: { opacity: 1 },
@@ -88,7 +88,7 @@ export function AnimatedHero() {
 							Let&apos;s talk
 						</Button>
 						<Link
-							href="https://www.dropbox.com/scl/fi/t13lywgaqlev9krw1uod3/Resume-7_23_24.pdf?rlkey=d5pjw8nvvuuvkoi3gy88bm81n&st=cmc0011g&dl=0"
+							href="https://www.dropbox.com/scl/fi/your-current-resume-link/Resume.pdf?dl=0"
 							target="_blank"
 							className={styles.resume_link}
 						>

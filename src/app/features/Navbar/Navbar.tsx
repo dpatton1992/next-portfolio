@@ -254,12 +254,12 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
 	{
-		label: 'About Me',
+		label: 'Home',
 		href: '/',
 		children: [
 			{
 				label: 'Bio',
-				subLabel: 'My journey from student to developer',
+				subLabel: 'My journey as a backend engineer',
 				href: '/#bio',
 			},
 			{
@@ -270,24 +270,23 @@ const NAV_ITEMS: Array<NavItem> = [
 		],
 	},
 	{
-		label: 'My Work',
+		label: 'Work',
 		href: '/my-work',
 		children: [
-			// {
-			// 	label: 'Github Activity',
-			// 	subLabel: "See what i've been working on recently",
-			// 	href: '/my-work#github-activity',
-			// },
 			{
 				label: 'Projects',
-				subLabel: 'A list of my favorite projects',
+				subLabel: 'Production systems and open source work',
 				href: '/my-work#projects',
 			},
 			{
 				label: 'Technologies',
-				subLabel: 'Here are some of the technologies I have experience with',
+				subLabel: 'Tools and technologies I work with',
 				href: '/my-work#technologies',
 			},
 		],
+	},
+	{
+		label: 'Blog',
+		href: '/blog',
 	},
 ];
